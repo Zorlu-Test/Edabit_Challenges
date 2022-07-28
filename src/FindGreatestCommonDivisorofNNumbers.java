@@ -14,7 +14,7 @@ gcd({120, 300, 95, 425, 625}) ➞ 5
     public static void main(String[] args) {
 
 
-        int numbers[] = {84, 70, 42, 56};
+        int numbers[] = {120, 105, 300, 95, 425, 625, 18};
 
         gcd(numbers);
 
@@ -25,25 +25,33 @@ gcd({120, 300, 95, 425, 625}) ➞ 5
 
         int k = 1;
         int minNum = a[0];
+        int dummy = 0;
 
 
         for (int i = 0; i < a.length; i++) {
-
-            if (minNum>a[i]){
-                minNum=a[i];
+            if (minNum > a[i]) {
+                minNum = a[i];
             }
-
-
         }
 
-        System.out.println(minNum);
+
+        for (int j = minNum; j > 0; j--) {
+
+            for (int i = 0; i < a.length; i++) {
 
 
-        for (int i = 0; i < a.length; i++) {
+                if (a[i] % j == 0) {
+                    dummy++;
+                }
 
 
+                if (dummy == a.length) {
+                    System.out.println(j);
+                    return;
+                }
 
-
+            }
+            dummy = 0;
 
         }
 
