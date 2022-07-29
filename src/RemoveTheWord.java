@@ -38,10 +38,10 @@ If all the letters in the array are used in the string, the function should retu
 
 
         for (int i = 0; i < a.length; i++) {
-            int count=0;
+
             for (int j = 0; j < strArray.length; j++) {
 
-                if (a[i].equals(strArray[j])&& count==0){
+                if (a[i].equals(strArray[j])){
 
                     a[i]="";
                     strArray[j]="";
