@@ -26,7 +26,7 @@ validateCard(1234567890123452) ➞ true
 
     public static void main(String[] args) {
 
-        long num = 1234567890123452l;
+        long num = 36717601781975L;
 
 
         System.out.println(validateCard(num));
