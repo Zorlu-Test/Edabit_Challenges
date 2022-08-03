@@ -1,5 +1,7 @@
 public class ValidateCreditCardNumber {
 
+    /* I am aware it is kind of cluttered I just wanted approach like this */
+
     /*
     * Create a function that takes a number as an argument and returns true if the number is a valid credit card number, false otherwise.
 
@@ -75,11 +77,11 @@ validateCard(1234567890123452) ➞ true
             return false;
         }
 
-        String sumStr=sum+"";
+        String sumStr = sum + "";
 
-        if (10-Integer.parseInt(sumStr.charAt(sumStr.length()-1)+"")==Integer.parseInt(checkdigit)){
+        if (10 - Integer.parseInt(sumStr.charAt(sumStr.length() - 1) + "") == Integer.parseInt(checkdigit)) {
             return true;
-        }else {
+        } else {
             return false;
         }
 
