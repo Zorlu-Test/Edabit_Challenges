@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ECGSequence {
 
@@ -38,7 +39,8 @@ Number 3 is at index 4 in the ECG Sequence.*/
 
     public static int ecgSeqIndex(int num) {
 
-        ArrayList<Integer> list = new ArrayList<>();
+
+        ArrayList<Integer> list = new ArrayList<>( );
         list.add(2);
 
 
