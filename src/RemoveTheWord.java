@@ -29,6 +29,9 @@ If all the letters in the array are used in the string, the function should retu
 
         findWord(a, str);
 
+
+
+
     }
 
 
