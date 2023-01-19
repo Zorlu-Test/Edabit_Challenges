@@ -21,7 +21,7 @@ sevenBoom([2, 55, 60, 97, 86]) ➞ "Boom!"
     public static void main(String[] args) {
 
 
-        int[] numbers = {1, 2, 3, 4, 5, 6, 17, 27};
+        int[] numbers = {1, 7, 3, 4, 5, 6, 17, 27};
 
         sevenBoom(numbers);
 
@@ -29,7 +29,7 @@ sevenBoom([2, 55, 60, 97, 86]) ➞ "Boom!"
     }
 
 
-    public static void sevenBoom(int[] numberArray) {
+    public static String  sevenBoom(int[] numberArray) {
 
         //int []numbers={1,2,3,4,5,6,7};
 
@@ -37,24 +37,22 @@ sevenBoom([2, 55, 60, 97, 86]) ➞ "Boom!"
         String myNum = "";
 
 
-
-
         for (int i = 0; i < numberArray.length; i++) {
-
             myNum = numberArray[i] + "";
-
-
             System.out.println("myNum = " + myNum);
 
             if (myNum.contains("7")) {
                 myDummy = true;
                System.out.println("Boom!");
-                break;
+                myDummy=true;
             }
-
-
         }
 
+        if (myDummy==true){
+            return "Boom!";
+        }else {
+            return "Hahah kactim";
+        }
 
     }
 
